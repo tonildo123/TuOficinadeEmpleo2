@@ -25,7 +25,7 @@ public class Jovenes extends Fragment {
         btn4 = (Button)container.findViewById(R.id.bCronograma);
         c2 = (LinearLayout)container.findViewById(R.id.contiene);
 
-        
+
 
         return rootView;
     }
