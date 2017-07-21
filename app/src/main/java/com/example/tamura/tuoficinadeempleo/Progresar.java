@@ -2,6 +2,7 @@ package com.example.tamura.tuoficinadeempleo;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +26,10 @@ public class Progresar extends Fragment {
     btn1 = (Button)container.findViewById(R.id.bRequisitosP);
     btn2 = (Button)container.findViewById(R.id.bCuandoCobro);
     c = (LinearLayout)container.findViewById(R.id.contenedor);
+
+        BienvenidaProgresar bp = new BienvenidaProgresar();
+        FragmentManager manejo = getFragmentManager();
+        manejo.beginTransaction().replace(R.id.contenedor, bp).commit();
 
 
 
